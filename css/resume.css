@@ -1,0 +1,170 @@
+html{
+    color: #00274C;
+    padding: 5px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 20px;
+    padding: 5px;
+    grid-column: 1 / 4;
+    border-bottom: 2px solid;
+    display: grid;
+    align-items: center;
+}
+
+h2{
+    font-size: 18px;
+}
+
+#contact{
+    border-bottom: 2px solid;
+    padding: 5px;
+    grid-column: 4 / 6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact li{
+    padding-right: 5px;
+}
+
+
+#edu{
+    grid-column: 5 / 6;
+    grid-row: 2 / 4;
+    padding: 5px;
+}
+
+#edu h2{
+    font-size: 16px;
+}
+
+#msi{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+#bs{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+h3{
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+li{
+    font-size: 12px;
+}
+
+#courses{
+    grid-column: 1 / 5;
+    grid-row: 2 / 6;
+    padding: 5px;
+    border-right: 2px solid;
+}
+
+#courses ul{
+    border-bottom: 1px solid;
+    padding: 5px;
+}
+
+
+#skills{
+    grid-column: 5 / 6;
+    grid-row: 5 / 8;
+    padding: 5px;
+}
+
+#gen-skills{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+#pc-skills{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+
+
+#exp{
+    padding: 5px;
+    grid-column: 1 / 5;
+    border-right: 2px solid;
+}
+
+#exp ul{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+
+#volunteer{
+    grid-column: 1 / 5;
+    grid-row: 7 / 9;
+    padding: 5px;
+    border-right: 2px solid;
+}
+
+#volunteer ul{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+
+#leader{
+    grid-column: 1 / 5;
+    grid-row: 9 / 10;
+    padding: 5px;
+    border-right: 2px solid;
+}
+
+#leader ul{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+#awards{
+    grid-column: 1 / 5;
+    padding: 5px;
+    border-right: 2px solid;
+}
+
+.award{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+#last{
+    padding-bottom: 5px;
+}
