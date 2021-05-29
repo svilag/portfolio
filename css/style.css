@@ -504,10 +504,10 @@ main{
 
 .work{
     line-height: 1.5;
+    color: white;
 }
 
 #work-h{
-    color: white;
     font-size: 40px;
     padding: 20px;
 }
@@ -521,7 +521,7 @@ main{
 }
 
 .process img{
-    width: 80%;
+    width: 95%;
     border-radius: 20%;
 }
 
@@ -549,7 +549,6 @@ main{
 #si539-desc{
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    color: white;
     align-self: center;
 }
 
@@ -561,9 +560,20 @@ main{
 #si667-desc{
     grid-column: 1 / 3;
     grid-row: 4 / 5;
-    color: white;
     align-self: center;
 }
+
+#hist-sem{
+    grid-column: 1 / 3;
+}
+
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
 
 .workex{
     border: 2px solid white;
@@ -592,6 +602,104 @@ main{
 
 .centertxt{
     color: white;
+}
+
+#blurb{
+    color: white;
+    line-height: 1.5;
+    grid-column: 1 / -1;
+    text-align: center;
+    border-top: 2px solid;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+#blurb a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+#viewDiv{
+    border: 50px solid #A30000
+}
+
+#author{
+    padding: 10px;
+}
+
+.authorship{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hist{
+    text-indent: 2rem;
+    line-height: 2;
+    padding: 10px 40px 0px 40px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.map-desc{
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+}
+
+#appendix{
+    line-height: 2;
+}
+
+.appendix-h{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#appendix-letters{
+    padding: 20px;
+    margin: 10px;
+}
+
+.bib{
+    margin: 20px;
+}
+
+.bib-h3{
+    padding-left: 10px;
+}
+
+.bib-h4{
+    padding: 10px 20px
+}
+
+.bib-item{
+    padding-left: 40px;
+}
+
+.bib-item-h{
+    padding-left: 30px;
+}
+
+.bib-subitem{
+    padding-left: 20px;
+}
+
+.bib-wrap{
+    text-indent: -20px;
+}
+
+.bib-link{
+    color: white;
+    padding: 3px;
 }
 
 /*  */
@@ -1004,24 +1112,6 @@ footer p{
     filter: drop-shadow(0 0 0.25rem black);
 }
 
-#blurb{
-    color: white;
-    line-height: 1.5;
-    grid-column: 1 / -1;
-    text-align: center;
-    border-top: 2px solid;
-    padding: 30px;
-    margin-top: 30px;
-}
-
-#blurb a{
-    text-decoration: none;
-    color: white;
-    border: 1px solid;
-    border-radius: 8px;
-    padding: 3px;
-}
-
 /*  */
 /*  */
 /*  */
@@ -1065,6 +1155,10 @@ footer p{
 /*  */
 
 @media screen and (min-width: 600px){
+    .process img{
+        width: 80%;
+    }
+
     .contact-page{
         display: flex;
         flex-flow: column wrap;
@@ -1124,10 +1218,9 @@ footer p{
 
 @media screen and (min-width: 1200px){
 
-    .workcont{
-        width: 80%;
+    .process img{
+        width: 60%;
     }
-
 
     .contact-page{
         display: flex;
