@@ -1,0 +1,46 @@
+/* colors */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* fonts */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-flow: column;
+    
+}
