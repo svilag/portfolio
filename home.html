@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,18 +37,52 @@
         <header>
             <h1><a href="index.html">Shelbie Vilag</a></h1>
             <div class="navigation">
-                <button type="button" id="menu">Menu</button>
-                <nav>
-                    <button type="button" class="nav-button" id="mywork">My Work</button>
-                    <button type="button" class="nav-button" id="info">Info</button>
+                <button type="button" id="menu" onclick="menuFunction()">Menu</button>
+                <nav class="nav-content" id="menu-content">
+                    <button type="button" class="nav-button" id="mywork"><a href="">My Work</a></button>
+                    <button type="button" class="nav-button" id="info"><a href="">Info</a></button>
+                    <button type="button" class="nav-button" id="info"><a href="">Contact</a></button>
                 </nav>
             </div>
         </header>
-        <main>
+        <main id="main-content">
+            <div class="img-slideshow">
+                <div class="slides fade">
+                    <div class="slide-num">1 / 4</div>
+                    <img src="./images/shelbie.jpg" alt="shelbie">
+                </div>
+
+                <div class="slides fade">
+                    <div class="slide-num">2 / 4</div>
+                    <img src="./images/jewel.png" alt="shelbie">
+                </div>
+
+                <div class="slides fade">
+                    <div class="slide-num">3 / 4</div>
+                    <img src="./images/grayground.jpg" alt="shelbie">
+                </div>
+
+                <div class="slides fade">
+                    <div class="slide-num">4 / 4</div>
+                    <img src="./images/clouds1.jpg" alt="shelbie">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
 
         </main>
         <footer>
-
+            <p id="foot">&copy; 2021 Shelbie Vilag</p>
         </footer>
+        <script src="./JavaScript/menu.js"></script>
+        <script src="./JavaScript/gallery.js"></script>
     </body>
 </html>
